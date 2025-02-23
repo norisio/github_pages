@@ -5,8 +5,6 @@ import {
   Container,
   Box,
   Avatar,
-  Link,
-  Stack,
   ThemeProvider,
 } from "@mui/material";
 import { theme } from "./theme/theme";
