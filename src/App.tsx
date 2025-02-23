@@ -11,14 +11,10 @@ import {
 } from "@mui/material";
 import { theme } from "./theme/theme";
 import Navbar from "./components/Navbar";
+import { EntryList, EntryWithDetails } from "./components/EntryList";
+import { SectionHeader } from "./components/SectionHeader";
 
 import profileImage from "./assets/profile_image.jpg";
-
-type EntryWithDetails = {
-  title: string;
-  url: string | null;
-  details: string[] | null;
-};
 
 const musicSectionEntries: EntryWithDetails[] = [
   {
@@ -52,6 +48,37 @@ const appearanceSectionEntries: EntryWithDetails[] = [
   {
     title: "imasjazz 4th Live - imasjazzファンク部 (2024/7)",
     url: "https://x.com/imasjazz/status/1804122320006713617",
+    details: null,
+  },
+];
+
+const engineeringSectionEntries: EntryWithDetails[] = [
+  {
+    title: "PCにGPIOを生やして遊ぼう (2025/2)",
+    url: "https://nor-isio.hateblo.jp/archive/2025/02/12",
+    details: null,
+  },
+  {
+    title: "スマブラ自動録画システム (2024/3 〜 2024/4)",
+    url: "https://x.com/skb_apos/status/1823272210699837603",
+    details: null,
+  },
+  {
+    title: "トランジスタアンプ製作 (2023/12 〜 2024/2)",
+    url: "https://x.com/skb_apos/status/1753621582583640435",
+    details: null,
+  },
+  {
+    title: "加湿器湿度フィードバック制御 (2022/1)",
+    url: "https://nor-isio.hateblo.jp/entry/2022/01/15/115652",
+    details: null,
+  },
+];
+
+const otherSectionEntries: EntryWithDetails[] = [
+  {
+    title: "京王線沿線ウォーク (2021/4 〜 2021/5)",
+    url: "https://nor-isio.hateblo.jp/entry/2021/04/30/220039",
     details: null,
   },
 ];
@@ -92,152 +119,26 @@ const App = () => {
 
         {/* 音楽セクション */}
         <Box sx={{ mb: 6 }}>
-          <Stack
-            direction="row"
-            spacing={2}
-            sx={{
-              borderBottom: "2px solid #1976d2",
-              mb: 2,
-              pb: 1,
-            }}
-            alignItems="baseline"
-            justifyContent="center"
-          >
-            <Typography variant="h5" component="h2">
-              合唱編曲
-            </Typography>
-            <Typography variant="subtitle1">(さかべ)</Typography>
-          </Stack>
-          <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
-            {musicSectionEntries.map((link) => (
-              <div key={link.title}>
-                {link.url ? (
-                  <Link
-                    href={link.url}
-                    target="_blank"
-                    color="text.secondary"
-                    underline="hover"
-                  >
-                    {link.title}
-                  </Link>
-                ) : (
-                  <Box sx={{ mb: 1 }}>{link.title}</Box>
-                )}
-                {link.details && (
-                  <Box
-                    sx={{
-                      maxWidth: "600px",
-                      color: "text.secondary",
-                      fontSize: "0.875rem",
-                      textAlign: "left",
-                    }}
-                  >
-                    {link.details.map((detail, index) => (
-                      <Typography key={index} variant="body2" sx={{ mb: 0.5 }}>
-                        {detail}
-                      </Typography>
-                    ))}
-                  </Box>
-                )}
-              </div>
-            ))}
-          </Box>
+          <SectionHeader title="合唱編曲" subtitle="さかべ" />
+          <EntryList entries={musicSectionEntries} />
         </Box>
 
         {/* 音楽出演セクション */}
         <Box sx={{ mb: 6 }}>
-          <Stack
-            direction="row"
-            spacing={2}
-            sx={{
-              borderBottom: "2px solid #1976d2",
-              mb: 2,
-              pb: 1,
-            }}
-            alignItems="baseline"
-            justifyContent="center"
-          >
-            <Typography variant="h5" component="h2">
-              出演
-            </Typography>
-            <Typography variant="subtitle1">(さかべ)</Typography>
-          </Stack>
-          <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
-            {appearanceSectionEntries.map((link) => (
-              <Link href={link.url} target="_blank" color="inherit">
-                {link.title}
-              </Link>
-            ))}
-          </Box>
+          <SectionHeader title="出演" subtitle="さかべ" />
+          <EntryList entries={appearanceSectionEntries} />
         </Box>
 
         {/* 技術セクション */}
         <Box sx={{ mb: 6 }}>
-          <Typography
-            variant="h5"
-            component="h2"
-            sx={{
-              mb: 2,
-              pb: 1,
-              borderBottom: "2px solid #1976d2",
-            }}
-          >
-            工学系の遊び
-          </Typography>
-          <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
-            <Link
-              href="https://nor-isio.hateblo.jp/archive/2025/02/12"
-              target="_blank"
-              color="inherit"
-            >
-              PCにGPIOを生やして遊ぼう (2025/2)
-            </Link>
-            <Link
-              href="https://x.com/skb_apos/status/1823272210699837603"
-              target="_blank"
-              color="inherit"
-            >
-              スマブラ自動録画システム (2024/3 〜 2024/4)
-            </Link>
-            <Link
-              href="https://x.com/skb_apos/status/1753621582583640435"
-              target="_blank"
-              color="inherit"
-            >
-              トランジスタアンプ製作 (2023/12 〜 2024/2)
-            </Link>
-            <Link
-              href="https://nor-isio.hateblo.jp/entry/2022/01/15/115652"
-              target="_blank"
-              color="inherit"
-            >
-              加湿器湿度フィードバック制御 (2022/1)
-            </Link>
-          </Box>
+          <SectionHeader title="工学系の遊び" />
+          <EntryList entries={engineeringSectionEntries} />
         </Box>
 
         {/* その他セクション */}
         <Box sx={{ mb: 6 }}>
-          <Typography
-            variant="h5"
-            component="h2"
-            sx={{
-              mb: 2,
-              pb: 1,
-              borderBottom: "2px solid #1976d2",
-            }}
-          >
-            その他
-          </Typography>
-          <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
-            <Link
-              href="https://nor-isio.hateblo.jp/entry/2021/04/30/220039"
-              target="_blank"
-              color="inherit"
-            >
-              京王線沿線ウォーク (2021/4 〜 2021/5)
-            </Link>
-          </Box>
+          <SectionHeader title="その他" />
+          <EntryList entries={otherSectionEntries} />
         </Box>
       </Container>
     </ThemeProvider>
