@@ -38,8 +38,16 @@ const musicSectionEntries: EntryWithDetails[] = [
 const appearanceSectionEntries: EntryWithDetails[] = [
   {
     title:
+      "スタァ歌劇団 Théâtre du Planisphère" +
+      ' 単独公演#1 "Le Premier Ciel"' +
+      " (2024/12)",
+    url: "https://posfie.com/@Lyon0807/p/gGKSfDP",
+    details: [],
+  },
+  {
+    title:
       "副次的文化系合唱祭2024～大宴会～ Day1, Day3" +
-      " - スタァ歌劇団 Théâtre du Planisphère (2024/8/18, 2024/9/1)",
+      " - スタァ歌劇団 Théâtre du Planisphère (2024/8, 9)",
     url: "https://www.youtube.com/watch?v=SFdrBAJ1Z0g",
     details: null,
   },
