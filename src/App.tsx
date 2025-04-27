@@ -16,6 +16,14 @@ import profileImage from "./assets/profile_image.jpg";
 
 const musicSectionEntries: EntryWithDetails[] = [
   {
+    title: "『マクロス』 混声四部合唱 編曲",
+    url: null,
+    details: [
+      "超時空合唱団レザナンス",
+      "- 2025/8/31（日） 副次的文化系合唱祭2025〜大盤振舞〜 Day3 （予定）",
+    ],
+  },
+  {
     title: "『約束タワー』 混声四部合唱 編曲",
     url: null,
     details: [
@@ -23,6 +31,7 @@ const musicSectionEntries: EntryWithDetails[] = [
       "- 2024/8/18 (日) 副次的文化系合唱祭2024～大宴会～ Day1",
       "- 2024/9/1 (日) 副次的文化系合唱祭2024～大宴会～ Day3",
       '- 2024/12/1 (日) 単独公演#1 "Le Premier Ciel"',
+      "- 2025/5/24 (土) 鈴木智士生誕40周年記念演奏会 ジャンニフェス2025 （予定）",
     ],
   },
   {
