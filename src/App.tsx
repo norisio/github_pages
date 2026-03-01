@@ -24,7 +24,7 @@ const musicSectionEntries: EntryWithDetails[] = [
   },
   {
     title: "『一度だけの恋なら』 混声四部合唱 編曲",
-    url: null,
+    url: "https://www.youtube.com/watch?v=PsqGF2wT03Y",
     details: [
       "超時空合唱団レザナンス (演奏予定)",
     ],
