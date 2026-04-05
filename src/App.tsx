@@ -16,6 +16,13 @@ import profileImage from "./assets/profile_image.jpg";
 
 const musicSectionEntries: EntryWithDetails[] = [
   {
+    title: "『Absolute 5』 混声四部合唱 編曲",
+    url: null,
+    details: [
+      "超時空合唱団レザナンス (演奏予定)",
+    ],
+  },
+  {
     title: "『LIFE IS LIKE A VOYAGE』 混声四部合唱 編曲",
     url: null,
     details: [
@@ -24,17 +31,19 @@ const musicSectionEntries: EntryWithDetails[] = [
   },
   {
     title: "『一度だけの恋なら』 混声四部合唱 編曲",
-    url: "https://www.youtube.com/watch?v=PsqGF2wT03Y",
+    url: null,
     details: [
-      "超時空合唱団レザナンス (演奏予定)",
+      "超時空合唱団レザナンス",
+      "- 2026/3/28（土） べたつきフェス サラサラの部"
     ],
   },
   {
     title: "『マクロス』 混声四部合唱 編曲",
-    url: null,
+    url: "https://www.youtube.com/watch?v=PsqGF2wT03Y",
     details: [
       "超時空合唱団レザナンス",
       "- 2025/8/31（日） 副次的文化系合唱祭2025〜大盤振舞〜 Day3",
+      "- 2026/3/28（土） べたつきフェス サラサラの部"
     ],
   },
   {
@@ -59,6 +68,27 @@ const musicSectionEntries: EntryWithDetails[] = [
 ];
 
 const appearanceSectionEntries: EntryWithDetails[] = [
+  {
+    title: "べたつきフェス サラサラの部 - 超時空合唱団レザナンス (2026/3)",
+    url: null,
+    details: null
+  },
+  {
+    title: "べたつきフェス ベタベタの部 - ？？？ (2026/3)",
+    url: null,
+    details: null
+  },
+  {
+    title: "副次的文化系合唱祭2025～大盤振舞～ Day1, Day3"+
+      " - スタァ歌劇団 Théâtre du Planisphère, 超時空合唱団レザナンス (2025/8)",
+    url: null,
+    details: null
+  },
+  {
+    title: "ジャンニフェス2025　鈴木智士生誕40周年記念演奏会 - スタァ歌劇団 Théâtre du Planisphère, 合同合唱ステージ (2025/5)",
+    url: "https://youtu.be/w8FbWsRND2A?si=xi9vKm2HXqpylcvP",
+    details: null,
+  },
   {
     title:
       "スタァ歌劇団 Théâtre du Planisphère" +
@@ -139,7 +169,7 @@ const App = () => {
             }}
           />
           <Typography variant="h4" gutterBottom>
-            さか
+            さかべ
           </Typography>
           <Typography variant="subtitle1" color="text.secondary">
             skb_apos / norisio
@@ -148,13 +178,13 @@ const App = () => {
 
         {/* 音楽セクション */}
         <Box sx={{ mb: 6 }}>
-          <SectionHeader title="合唱編曲" subtitle="さかべ" />
+          <SectionHeader title="合唱編曲" />
           <EntryList entries={musicSectionEntries} />
         </Box>
 
         {/* 音楽出演セクション */}
         <Box sx={{ mb: 6 }}>
-          <SectionHeader title="出演" subtitle="さかべ" />
+          <SectionHeader title="出演"/>
           <EntryList entries={appearanceSectionEntries} />
         </Box>
 

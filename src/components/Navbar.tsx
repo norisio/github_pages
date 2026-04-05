@@ -12,7 +12,7 @@ const Navbar = () => {
     <AppBar position="fixed" color="primary" sx={{ width: "100%" }}>
       <Toolbar sx={{ justifyContent: "space-between" }}>
         <Typography variant="h6" component="div">
-          saka's works
+          sakabe's works
         </Typography>
         <Box>
           <IconButton
