@@ -31,7 +31,7 @@ const musicSectionEntries: EntryWithDetails[] = [
     ],
   },
   {
-    title: "『Songbird』 四分アカペラ編曲",
+    title: "『Songbird』 四声アカペラ編曲",
     url: "https://www.youtube.com/watch?v=Pn-FDsp57Ng",
     details: [
       "アンサンブル愛鳥会",
