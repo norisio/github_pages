@@ -79,9 +79,21 @@ const appearanceSectionEntries: EntryWithDetails[] = [
     details: null
   },
   {
-    title: "副次的文化系合唱祭2025～大盤振舞～ Day1, Day3"+
-      " - スタァ歌劇団 Théâtre du Planisphère, 超時空合唱団レザナンス (2025/8)",
-    url: null,
+    title: "副次的文化系合唱祭2025～大盤振舞～ Day3"+
+      " - 超時空合唱団レザナンス (2025/8)",
+    url: "https://www.youtube.com/watch?v=DS1Jhpv7xiE",
+    details: null
+  },
+  {
+    title: "副次的文化系合唱祭2025～大盤振舞～ Day3"+
+      " - スタァ歌劇団 Théâtre du Planisphère (2025/8)",
+    url: "https://www.youtube.com/watch?v=TTFTILNdD1Y",
+    details: null
+  },
+  {
+    title: "副次的文化系合唱祭2025～大盤振舞～ Day1"+
+      " - スタァ歌劇団 Théâtre du Planisphère (2025/8)",
+    url: "https://www.youtube.com/watch?v=aA3VJhCQR8k",
     details: null
   },
   {
