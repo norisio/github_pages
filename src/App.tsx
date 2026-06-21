@@ -26,7 +26,15 @@ const musicSectionEntries: EntryWithDetails[] = [
     title: "『LIFE IS LIKE A VOYAGE』 混声四部合唱 編曲",
     url: null,
     details: [
-      "スタァ歌劇団 Théâtre du Planisphère (演奏予定)",
+      "スタァ歌劇団 Théâtre du Planisphère",
+      "- 2026/6/21（日） GirlsLoveFestival 47 アフターステージ"
+    ],
+  },
+  {
+    title: "『Songbird』 四分アカペラ編曲",
+    url: "https://www.youtube.com/watch?v=Pn-FDsp57Ng",
+    details: [
+      "アンサンブル愛鳥会",
     ],
   },
   {
