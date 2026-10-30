@@ -80,6 +80,18 @@ const musicSectionEntries: EntryWithDetails[] = [
 
 const appearanceSectionEntries: EntryWithDetails[] = [
   {
+    title: "副次的文化系合唱祭2026～唱宴～ Day2"+
+      " - 超時空合唱団レザナンス (2026/8)",
+    url: null,
+    details: null
+  },
+  {
+    title: "副次的文化系合唱祭2026～唱宴～ Day2"+
+      " - スタァ歌劇団 Théâtre du Planisphère (2026/8)",
+    url: null,
+    details: null
+  },
+  {
     title: "べたつきフェス サラサラの部 - 超時空合唱団レザナンス (2026/3)",
     url: null,
     details: null
